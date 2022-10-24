@@ -84,7 +84,7 @@ body {
     color: #fff;
     font-size: 1.5rem;
     font-weight: 700;
-    padding: 1rem 3.5rem;
+    padding: 1.5rem 3.5rem;
     border: none;
 }
 
@@ -130,6 +130,7 @@ body {
     font-size: 2rem;
     font-weight: 400;
     animation: moveInRight 1s;
+    line-height: 1.5;
 }
 
 /*.hero-button {
@@ -140,6 +141,9 @@ body {
     margin-top: 4rem;
 }
 
+.hero-first-column, .hero-second-column {
+    padding: 5rem;
+}
 
 .hero-first-column {
     display: table;
@@ -236,6 +240,7 @@ body {
 }
 
 .features-main-heading {
+    color: #2D314D;
     font-size: 4.5rem;
     font-weight: 300;
 }
@@ -261,6 +266,7 @@ body {
 }
 
 .features-heading {
+    color: #2D314D;
     font-size: 2.5rem;
 }
 
@@ -274,9 +280,69 @@ body {
 /*////////// ARTICLES /////*/
 
 #section-articles {
+    width: 100%;
+    padding: 7% 0;
+    background-color: #FAFAFA;
+}
+
+.articles-main-wrapper {
+    max-width: 130rem;
+    margin: 0 auto;
+}
+
+.articles-main-heading {
+    font-size: 4.5rem;
+    font-weight: 300;
+}
+
+.articles-row {
+    margin-top: 5%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.articles-content-wrapper{
+    background-color: #ffffff;
+    border-radius: 9px !important;
+    margin: 0 1.5rem;
+    padding: 0 !important;
 
 }
 
+.articles-image {
+    height: 20rem;
+    width: 100%;
+    border-radius: 9px 9px 0 0;
+}
+
+.small-text {
+    color: #9698A6;
+    display: block;
+    font-size: 1rem;
+    margin: 3rem 2.5rem 0 2.5rem;
+}
+
+.articles-heading {
+    color: #2D314D;
+    font-size: 1.8rem;
+    margin: 1rem 2.5rem 0 2.5rem;
+}
+
+.articles-par {
+    color: #9698A6;
+    font-size: 1.4rem;
+    margin: 1rem 2.5rem 2.5rem 2.5rem;
+}
+
+
+
+
+
+
+
+
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*////////// FOOTER /////*/
 
 
 
