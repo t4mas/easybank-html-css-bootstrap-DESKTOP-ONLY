@@ -41,7 +41,7 @@ body {
     width: 100%;
     text-align: center;
     background-color: #fff;
-    padding: 2.8rem 0 1rem;
+    padding: 2.5rem 0;
     position: absolute;
     z-index: 3;
     position: fixed;
@@ -50,28 +50,11 @@ body {
 .header-content-wrapper {
     max-width: 130rem;
     margin: 0 auto;
-
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center !important;
 }
 
-.header-first-column, .header-second-column, .header-third-column {
-    display: table;
-}
-
-
-.site-logo, .navbar, .header-button {
-    display: table-cell !important;
-    vertical-align: middle !important;
-}
-
-.site-logo {
-    margin-top: 1.2rem;
-}
-
-
-#logo {
-    display: table-cell !important;
-    vertical-align: middle !important;
-}
 
 .navbar {
     margin: 0 !important;
@@ -84,7 +67,7 @@ body {
     color: #9698A6 !important;
     padding-bottom: 3rem !important;
     padding: 1rem;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
 
 }
 
@@ -93,6 +76,7 @@ body {
     text-decoration-color: #2BB7DA !important;
     text-decoration-thickness: 3px !important;
 }
+
 
 .button {
     background-image: linear-gradient(to right, #31D35C, #2BB7DA);
@@ -137,6 +121,7 @@ body {
     color: #2D314D;
     font-weight: 400;
     line-height: 1.2;
+    animation: moveInLeft 1s;
 }
 
 .par {
@@ -144,6 +129,14 @@ body {
     font-size: 2rem;
     font-weight: 400;
 }
+
+.hero-par {
+    animation: moveInRight 1s;
+}
+
+/*.hero-button {
+    animation: moveInUp 1s;
+}*/
 
 .hero-par, .hero-button {
     margin-top: 4rem;
@@ -166,8 +159,62 @@ body {
 .hero-image {
     position: relative;
     bottom: 50;
+}
+
+
+@keyframes moveInLeft {
+
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+
+    80% {
+        transform: translateX(10px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
 
 }
+
+
+@keyframes moveInRight {
+
+    0% {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+
+    80% {
+        transform: translateX(-10px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+
+}
+
+/*
+@keyframes moveInUp {
+
+    0% {
+        opacity: 0;
+        transform: translateY(100px)
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+
+}
+*/
+
 
 
 
@@ -191,7 +238,7 @@ body {
 }
 
 .features-main-heading {
-    font-size: 3rem;
+    font-size: 4.5rem;
     font-weight: 300;
 }
 
@@ -205,6 +252,10 @@ body {
 
 .features-par, .features-heading {
     margin-top: 12%;
+}
+
+.features-heading {
+    font-size: 2.5rem;
 }
 
 .features-par {
