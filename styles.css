@@ -344,6 +344,53 @@ body {
 /*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 /*////////// FOOTER /////*/
 
+#footer {
+    width: 100%;
+    padding: 4% 0;
+    background-color: #2D314D;;
+}
+
+.footer-main-wrapper {
+    max-width: 130rem;
+    margin: 0 auto;
+}
+
+.site-logo-footer {
+    display: block;
+}
+
+
+.footer-list {
+    list-style: none;
+}
+
+.footer-list-item {
+    color: #fff;
+}
+
+.footer-list-link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.7rem;
+    font-weight: 300;
+    line-height: 2;
+}
+
+.footer-list-link:hover {
+    color: #31D35C
+}
+
+.copyright {
+    display: block;
+    color: #9698A6;
+    font-size: 1.7rem;
+    margin-top: 3rem;
+}
+
+.attribution {
+    margin-top: 3rem;
+    color: #fff;
+}
 
 
 
