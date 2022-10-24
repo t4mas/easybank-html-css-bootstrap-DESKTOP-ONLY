@@ -1,31 +1,54 @@
 
-/********************************************************************* GENERAL **********************************************************************/
+/**************************************************************************** GENERAL *****************************************************************************/
+/******************************************************************************************************************************************************************/
+
+/*
+Info: Some general infomation about this developement project.
+I am using Bootstrap 5 and Bootstrap 5 breakpoints in this project.
+This website is developed width "desktop-first" method.
+*/ 
+
 
 * {
     box-sizing: border-box;
 }
 
-/*****************************************************************************************************************************************************/
+html {
+    /* font-size: 10px; */
+    /* 10px / 16px = 0.625 = 62.5% */
+    /* 1rem = 10px */
+    /* Percentage of user's browser font-size setting. */
+    font-size: 62.5%;
+}
+
+
 
 body {
     font-family: 'Public Sans', sans-serif;
 }
 
 
-/********************************************************************* HEADER **********************************************************************/
+
+
+
+
+
+
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*////////// HEADER /////*/
 
 .header {
     width: 100%;
     text-align: center;
     background-color: #fff;
-    padding: 28px 0 10px;
+    padding: 2.8rem 0 1rem;
     position: absolute;
     z-index: 3;
     position: fixed;
 }
 
 .header-content-wrapper {
-    width: 1300px;
+    max-width: 130rem;
     margin: 0 auto;
 
 }
@@ -41,7 +64,7 @@ body {
 }
 
 .site-logo {
-    margin-top: 12px;
+    margin-top: 1.2rem;
 }
 
 
@@ -59,8 +82,9 @@ body {
 
 .nav-link, .nav-link-active {
     color: #9698A6 !important;
-    padding-bottom: 30px !important;
-    padding: 10px;
+    padding-bottom: 3rem !important;
+    padding: 1rem;
+    font-size: 1.5rem;
 
 }
 
@@ -72,11 +96,11 @@ body {
 
 .button {
     background-image: linear-gradient(to right, #31D35C, #2BB7DA);
-    border-radius: 50px;
+    border-radius: 5rem;
     color: #fff;
-    font-size: .9rem;
+    font-size: 1.5rem;
     font-weight: 700;
-    padding: 10px 35px;
+    padding: 1rem 3.5rem;
     border: none;
 }
 
@@ -86,15 +110,16 @@ body {
 }
 
 
-/***************************************************************************************************************************************************/
 
 
 
 
 
-/********************************************************************* HEro **********************************************************************/
 
-#hero {
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*////////// HERO /////*/
+
+#section-hero {
     width: 100%;
     background-color: #FAFAFA;
     background-image: url(images/bg-intro-desktop.svg) ;
@@ -103,21 +128,27 @@ body {
 }
 
 .hero-wrapper {
-    width: 1300px;
+    max-width: 130rem;
     margin: 0 auto;
+}
+
+.hero-heading {
+    font-size: 6rem;
+    color: #2D314D;
+    font-weight: 400;
+    line-height: 1.2;
 }
 
 .par {
     color: #9698A6;
-    font-size: 1.125rem;
+    font-size: 2rem;
     font-weight: 400;
 }
 
-.hero-heading {
-    font-size: 4rem;
-    color: #2D314D;
-    font-weight: 400;
+.hero-par, .hero-button {
+    margin-top: 4rem;
 }
+
 
 .hero-first-column {
     display: table;
@@ -139,17 +170,23 @@ body {
 }
 
 
-/********************************************************************* FEATURES **********************************************************************/
 
 
-#features {
+
+
+
+
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*////////// FEATURES /////*/
+
+#section-features {
     width: 100%;
     padding: 7% 0;
     background-color: #F3F4F6;
 }
 
 .features-main-wrapper {
-    width: 1300px;
+    max-width: 130rem;
     margin: 0 auto;
 }
 
@@ -164,7 +201,6 @@ body {
 
 .features-main-par {
     margin-top: 5%;
-
 }
 
 .features-par, .features-heading {
@@ -172,5 +208,15 @@ body {
 }
 
 .features-par {
-    font-size: 1rem ;
+    font-size: 1.7rem ;
 }
+
+
+
+
+
+
+
+
+/************************************************************************************************************************************************************************/
+/*********** FEATURES ******/
